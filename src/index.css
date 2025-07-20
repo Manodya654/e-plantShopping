@@ -1,0 +1,238 @@
+/* Reset & Base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f7fdf7;
+  background-image: url('https://images.pexels.com/photos/1090972/pexels-photo-1090972.jpeg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  color: #91db93;
+  line-height: 1.6;
+}
+.main-content {
+    background-color: rgba(255, 255, 255, 0.85);
+    padding: 2rem;
+    border-radius: 8px;
+    max-width: 900px;
+    margin: 2rem auto;
+  }
+  
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Header */
+header {
+  background-color: #dff5e1;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2px solid #b3dab3;
+}
+
+header h1 {
+  font-size: 1.8rem;
+  color: #1f3d1f;
+}
+
+nav a {
+  margin-left: 1rem;
+  font-weight: bold;
+  color: #265e26;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* Landing Page */
+.landing {
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  padding: 3rem;
+  color: white;
+  text-shadow: 1px 1px 2px #000;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.landing h2 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.landing p {
+  font-size: 1.2rem;
+  max-width: 600px;
+  margin-bottom: 2rem;
+}
+
+.landing button {
+  background-color: #4caf50;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.landing button:hover {
+  background-color: #388e3c;
+}
+
+/* Product Page */
+.product-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.5rem;
+  padding: 2rem;
+}
+
+/* Plant Cards */
+.plant-card {
+  background-color: #fff;
+  border: 1px solid #b3dab3;
+  border-radius: 8px;
+  padding: 1rem;
+  text-align: center;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+  transition: transform 0.2s ease;
+}
+
+.plant-card:hover {
+  transform: scale(1.02);
+}
+
+.plant-card img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 5px;
+  margin-bottom: 1rem;
+}
+
+.plant-card h3 {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+.plant-card p {
+  font-weight: bold;
+  color: #2e7d32;
+}
+
+.plant-card button {
+  margin-top: 0.5rem;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.plant-card button:hover {
+  background-color: #388e3c;
+}
+
+/* Cart Page */
+.cart-page {
+  padding: 2rem;
+}
+
+.cart-page h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.cart-page p {
+  margin-bottom: 1rem;
+  font-weight: bold;
+}
+
+.cart-page button {
+  margin-top: 1rem;
+  margin-right: 1rem;
+  background-color: #2e7d32;
+  color: white;
+  border: none;
+  padding: 0.6rem 1.2rem;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.cart-page button:hover {
+  background-color: #1b5e20;
+}
+
+/* Cart Item */
+.cart-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: white;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border: 1px solid #b3dab3;
+  border-radius: 8px;
+}
+
+.cart-item img {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  margin-right: 1rem;
+  border-radius: 5px;
+}
+
+.cart-item h3 {
+  flex: 1;
+}
+
+.cart-item p {
+  margin-right: 1rem;
+}
+
+.cart-item button {
+  margin: 0 0.3rem;
+  background-color: #66bb6a;
+  border: none;
+  color: white;
+  padding: 0.4rem 0.7rem;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.cart-item button:hover {
+  background-color: #388e3c;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .cart-item {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .cart-item img {
+    margin-bottom: 1rem;
+  }
+
+  .plant-card img {
+    height: 140px;
+  }
+}
